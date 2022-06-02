@@ -1,0 +1,376 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    color: #98999B;
+    background-color: #1f1d2c;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+span {
+    color: #f1a600;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-xs-100 {
+    width: 100%;
+}
+
+.col-xs-50 {
+    width: 50%;
+}
+
+.center-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.marginless {
+    margin: 0;
+}
+
+.title-color {
+    color: #ffffff;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.light-bg {
+    background-color: #242635;
+}
+
+.home {
+    height: 25rem;
+    background-image: url(../images/Rectangle\ 34.svg);
+    background-size: 16.2rem;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.home-bg {
+    background-image: url(../images/me.png);
+    background-size: 14.125rem;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 100%;
+}
+
+/* paragraph width */
+.home-bg :nth-child(2){
+    width: 12rem;
+}
+
+/* small paragraph width */
+.home-bg :nth-child(3){
+    width: 6rem;
+}
+
+.am {
+    padding: 0 1rem 2.5rem 1rem;
+    max-width: 36rem;
+}
+
+/* About me space around subtitle */
+.am h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.am .row > div{
+    padding-top: 2rem;
+}
+
+/* About me image size */
+.am img {
+    height: 4.5rem;
+}
+
+/* About me image and text space */
+.am img+h3 {
+    margin-top: .5rem;
+}
+
+/* About me year period and botom space */
+.am h3+h3 {
+    margin-bottom: 1rem;
+}
+
+.experience {
+    display: block;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.experience h2 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-around;
+    height: 25rem;
+    width: 21rem;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.experience-experience h3,
+.experience-experience p {
+    margin: .2rem;
+}
+
+.experience-container :nth-child(4) img{
+    width: .7rem;
+}
+
+.ma-bg {
+    background-image: url(../images/Rectangle.svg);
+    background-position: left;
+    background-size: calc(50vw - 3.875rem) 43.75rem;
+    background-repeat: no-repeat;
+}
+
+.ma {
+    padding-bottom: 1rem;
+}
+
+.ma:nth-child(1) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ma-grid {
+    display: grid;
+    column-gap: 3rem;
+    width: 19rem;
+}
+
+.ma-percentage {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4.375rem;
+}
+
+.ma-ability {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4.375rem;
+}
+
+.portfolio {
+    width: 35rem;
+    min-width: 20rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.portfolio h2 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-l {
+    display: flex;
+}
+
+.portfolio-r {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.portfolio img {
+    max-width: 15rem;
+}
+
+.image-shadow-accent {
+    box-shadow: -.625rem -1rem 0 -.1875rem #f1a600, .625rem -1rem 0 -.1875rem #f1a600;
+}
+
+.image-shadow-light {
+    box-shadow: -.625rem -1rem 0 -.1875rem #242635, .625rem -1rem 0 -.1875rem #242635;
+}
+
+.portfolio h3 {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    padding-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info > img{
+    height: 4rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer img {
+    height: .6rem;
+}
+
+.footer p {
+    margin: 1rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .col-sm-33 {
+        width: calc(100% / 3);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 31px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .home {
+        height: 34.6rem;
+        background-size: 25rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .home-bg :nth-child(2){
+        width: 27rem;
+    }
+
+    .home-bg :nth-child(3){
+        width: 12rem;
+    }
+
+    .am {
+        max-width: 60rem;
+    }
+
+    .experience-container {
+        height: 30rem;
+        width: 40rem;
+    }
+
+    .experience-container :nth-child(4) img{
+        width: .875rem;
+    }
+
+    .ma-bg {
+        background-size: calc(50vw - 10.5rem) 43.75rem;
+    }
+
+    .ma-grid {
+        width: 40rem;
+        column-gap: 6rem;
+    }
+
+    .ma-percentage {
+        height: 5.5rem;
+    }
+
+    .ma-ability {
+        height: 5.5rem;
+    }
+
+    .ma > h2{
+        text-align: left;
+    }
+
+    .portfolio img {
+        max-width: 18rem;
+    }
+
+    .portfolio {
+        width: 40.5rem;
+    }
+
+    .contact-container {
+        width: 30rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

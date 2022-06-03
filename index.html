@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="home">
+    <div id="home" class="home">
         <div class="home-bg">
             <div class="menu">
                 <nav>
@@ -22,22 +22,22 @@
                     </button>
                     <ul class="hidden" id="ul-nav">
                         <li>
-                            <a href=""><Span>Home</Span></a>
+                            <a href="#home" onclick="toggleMenu()"><Span>Home</Span></a>
                         </li>
                         <li>
-                            <a href="">Acerca de mí</a>
+                            <a href="#about-me" onclick="toggleMenu()">Acerca de mí</a>
                         </li>
                         <li>
-                            <a href="">Experiencia</a>
+                            <a href="#experience" onclick="toggleMenu()">Experiencia</a>
                         </li>
                         <li>                  
-                            <a href="">Mis habilidades</a>
+                            <a href="#abilities" onclick="toggleMenu()">Mis habilidades</a>
                         </li>
                         <li>
-                            <a href="">Mi portafolio</a>
+                            <a href="#portfolio" onclick="toggleMenu()">Mi portafolio</a>
                         </li>
                         <li>
-                            <a href="">contacto</a>
+                            <a href="#contact" onclick="toggleMenu()">contacto</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="center-parent light-bg">
+    <div id="about-me" class="center-parent light-bg">
         <div class="am center-text">
             <h2 class="title-color bold">Acerca de mí</h2>
             <div class="am-container">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="center-parent">
+    <div id="experience" class="center-parent">
         <div class="experience">
             <h2 class="center-text title-color bold">Experiencia</h2>
             <div class="experience-container">
@@ -120,7 +120,7 @@
         </div>
     </div>
 
-    <div class="center-parent ma-bg">
+    <div id="abilities" class="center-parent ma-bg">
         <div class="ma">
             <h2 class="title-color center-text">Mis habilidades</h2>
             <div class="ma-grid">
@@ -158,7 +158,7 @@
         </div>
     </div>
 
-    <div class="center-parent">
+    <div id="portfolio" class="center-parent">
         <div class="portfolio">
             <h2 class="center-text title-color">Mi portafolio</h2>
             <div class="portfolio-container">
@@ -190,7 +190,7 @@
         </div>
     </div>
 
-    <div class="center-parent light-bg">
+    <div id="contact" class="center-parent light-bg">
         <div class="contact-container">
             <h2 class="title-color center-text">Contacto</h2>
             <div class="contact-item">

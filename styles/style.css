@@ -103,12 +103,13 @@ nav ul{
     list-style: none;
     position: absolute;
     background-color: #1f1d2c;
-    right: .6rem;
-    top: 100;
+    right: 1.4rem;
+    top: 1.5rem;
+    padding-inline-start: 0;
 }
 
 nav li{
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 nav a{
@@ -339,12 +340,20 @@ nav a{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+    nav{
+        padding: .55rem 1rem 0 0;
+    }
+
     #ul-nav li{
         display: inline-block;
+        margin: 0 .5rem 0 1rem;
     }
 
     #ul-nav{
         display: block;
+        background-color: transparent;
+        position:static;
     }
 
     nav button{

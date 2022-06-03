@@ -6,15 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
 
 <body>
-    
     <div class="home">
         <div class="home-bg">
-            <h1 class="title-color">Vanessa H.</h1>
+            <div class="menu">
+                <nav>
+                    <button onclick="toggleMenu()">
+                        <img src="./images/menu 1.svg" alt="">
+                    </button>
+                    <ul class="hidden" id="ul-nav">
+                        <li>
+                            <a href=""><Span>Home</Span></a>
+                        </li>
+                        <li>
+                            <a href="">Acerca de mí</a>
+                        </li>
+                        <li>
+                            <a href="">Experiencia</a>
+                        </li>
+                        <li>                  
+                            <a href="">Mis habilidades</a>
+                        </li>
+                        <li>
+                            <a href="">Mi portafolio</a>
+                        </li>
+                        <li>
+                            <a href="">contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h1 class="title-color bold marginless">Eric Ramirez</h1>
             <h3 class="title-color">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
             <h3 class="title-color"><span>+5 años</span> de experiencia</h3>
 
@@ -26,7 +55,7 @@
 
     <div class="center-parent light-bg">
         <div class="am center-text">
-            <h2 class="title-color">Acerca de mí</h2>
+            <h2 class="title-color bold">Acerca de mí</h2>
             <div class="am-container">
                 <h3 class="center-text marginless">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum culpa ratione aliquid tempore, iusto obcaecati illum. Quisquam nesciunt suscipit, eaque magni accusantium optio recusandae obcaecati dolor alias repellendus. Eligendi, tenetur?</h3>
                 <div class="row">
@@ -55,7 +84,7 @@
 
     <div class="center-parent">
         <div class="experience">
-            <h2 class="center-text title-color">Experiencia</h2>
+            <h2 class="center-text title-color bold">Experiencia</h2>
             <div class="experience-container">
                 <div class="experience-item">
                     <img src="./images/ant-design_amazon-outlined.svg" alt="Amazon Logo">
@@ -183,6 +212,7 @@
         <p class="title-color">Made with <img src="./images/heart-svgrepo-com.svg" alt=""> in Academlo</p>
     </div>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

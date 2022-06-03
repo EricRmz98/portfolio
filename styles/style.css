@@ -16,13 +16,11 @@ body {
 }
 
 h1 {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 50px; 
 }
 
 h2 {
     font-size: 32px;
-    font-weight: 600;
 }
 
 h3 {
@@ -37,6 +35,12 @@ p {
 
 span {
     color: #f1a600;
+}
+
+/* AUXILIARS */
+
+.bold{
+    font-weight: 600;
 }
 
 .row {
@@ -73,32 +77,76 @@ span {
     background-color: #242635;
 }
 
+.hidden{
+    display: none;
+}
+
+/* NAV */
+
+nav{
+    text-align: right;
+    padding: 1rem;
+    position: relative;
+}
+
+nav button{
+    background-color: transparent;
+    border: 0;
+}
+
+nav button:hover{
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    position: absolute;
+    background-color: green;
+    right: .6rem;
+    top: 100;
+}
+
+nav li{
+    margin: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* HOME */
+
 .home {
     height: 25rem;
     background-image: url(../images/Rectangle\ 34.svg);
     background-size: 16.2rem;
     background-repeat: no-repeat;
     background-position: top right;
-    display: flex;
     padding: 0 1rem 1rem 1rem;
 }
 
 .home-bg {
-    background-image: url(../images/me.png);
+    background-image: url(../images/me.jpg);
     background-size: 14.125rem;
     background-repeat: no-repeat;
     background-position: bottom right;
-    width: 100%;
+    height: 100%;
 }
 
 /* paragraph width */
-.home-bg :nth-child(2){
+.home-bg h1 + h3{
     width: 12rem;
 }
 
 /* small paragraph width */
-.home-bg :nth-child(3){
+.home-bg h3 + h3{
     width: 6rem;
+}
+
+.home-bg h3 + img +img{
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .am {
@@ -290,21 +338,31 @@ span {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    #ul-nav li{
+        display: inline-block;
+    }
 
+    #ul-nav{
+        display: block;
+    }
+
+    nav button{
+        display: none;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     h1 {
-        font-size: 100px;
+        font-size: 150px;
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 80px;
     }
 
     h3 {
-        font-size: 31px;
+        font-size: 45px;
     }
 
     p {
@@ -312,47 +370,64 @@ span {
     }
 
     .home {
-        height: 34.6rem;
+        height: 60.6rem;
         background-size: 25rem;
         padding: 0 1rem 1rem 1rem;
     }
 
-    .home-bg :nth-child(2){
-        width: 27rem;
+    .home-bg h1 + h3{
+        width: 38rem;
     }
 
-    .home-bg :nth-child(3){
-        width: 12rem;
+    .home-bg h3 + h3{
+        width: 18rem;
+    }
+
+    .home img{
+        width: 4rem;
+    }
+
+    .home-bg h3 + img +img{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 
     .am {
-        max-width: 60rem;
+        max-width: 80rem;
+    }
+
+    .am img{
+        height: 9rem;
     }
 
     .experience-container {
-        height: 30rem;
-        width: 40rem;
+        height: 40rem;
+        width: 60rem;
+    }
+
+    .experience-container :nth-child(1) img{
+        width: 8rem;
     }
 
     .experience-container :nth-child(4) img{
-        width: .875rem;
+        width: 1.2rem;
     }
 
     .ma-bg {
-        background-size: calc(50vw - 10.5rem) 43.75rem;
+        background-size: calc(50vw - 15rem) 60rem;
     }
 
     .ma-grid {
-        width: 40rem;
+        width: 55rem;
         column-gap: 6rem;
     }
 
     .ma-percentage {
-        height: 5.5rem;
+        height: 8rem;
     }
 
     .ma-ability {
-        height: 5.5rem;
+        height: 8rem;
     }
 
     .ma > h2{
@@ -360,15 +435,23 @@ span {
     }
 
     .portfolio img {
-        max-width: 18rem;
+        max-width: 28rem;
     }
 
     .portfolio {
-        width: 40.5rem;
+        width: 59rem;
     }
 
     .contact-container {
-        width: 30rem;
+        width: 35rem;
+    }
+
+    .contact-info img{
+        height: 6rem;
+    }
+
+    .footer img{
+        height: .9rem;
     }
 }
 

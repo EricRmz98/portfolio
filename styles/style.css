@@ -102,7 +102,7 @@ nav button:hover{
 nav ul{
     list-style: none;
     position: absolute;
-    background-color: green;
+    background-color: #1f1d2c;
     right: .6rem;
     top: 100;
 }

@@ -231,7 +231,7 @@ nav a{
 .ma-bg {
     background-image: url(../images/Rectangle.svg);
     background-position: left;
-    background-size: calc(50vw - 3.875rem) 43.75rem;
+    background-size: calc(50vw - 4.5rem) 43.75rem;
     background-repeat: no-repeat;
 }
 
@@ -408,12 +408,12 @@ nav a{
 
     .home {
         height: 60.6rem;
-        background-size: 42rem;
+        background-size: 42rem 47.45rem;
         padding: 0 3rem 5rem 3rem;
     }
 
     .home-bg{
-        max-width: 105rem;
+        max-width: 100%;
         background-size: 36rem;
     }
 
@@ -452,11 +452,11 @@ nav a{
     }
 
     .experience-container :nth-child(4) img{
-        width: 1.2rem;
+        width: 1.1rem;
     }
 
     .ma-bg {
-        background-size: calc(50vw - 15rem) 60rem;
+        background-size: calc(50vw - 16rem) 60rem;
     }
 
     .ma-grid {
@@ -481,11 +481,11 @@ nav a{
     }
 
     .portfolio {
-        width: 59rem;
+        max-width: 59rem;
     }
 
     .contact-container {
-        width: 35rem;
+        max-width: 35rem;
     }
 
     .contact-info img{
@@ -499,4 +499,17 @@ nav a{
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    .menu{
+        padding-right: 2rem;
+    }
+
+    #ul-nav li{
+        margin: 0 4.04rem 0 0;
+    }
+
+    .home {
+        background-size: 44rem  47.45rem;
+        padding: 0 5rem 5rem 10vw;
+    }
 }

@@ -231,7 +231,7 @@ nav a{
 .ma-bg {
     background-image: url(../images/Rectangle.svg);
     background-position: left;
-    background-size: calc(50vw - 4.5rem) 43.75rem;
+    background-size: calc(50vw - 2.5rem) 43.75rem;
     background-repeat: no-repeat;
 }
 
@@ -246,8 +246,7 @@ nav a{
 
 .ma-grid {
     display: grid;
-    column-gap: 3rem;
-    width: 19rem;
+    max-width: 19rem;
 }
 
 .ma-percentage {
@@ -456,7 +455,7 @@ nav a{
     }
 
     .ma-bg {
-        background-size: calc(50vw - 16rem) 60rem;
+        background-size: calc(50vw - 4.4rem) 60rem;
     }
 
     .ma-grid {

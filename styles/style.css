@@ -53,10 +53,6 @@ span {
     width: 100%;
 }
 
-.col-xs-50 {
-    width: 50%;
-}
-
 .center-parent {
     display: flex;
     justify-content: center;
@@ -224,6 +220,11 @@ nav a{
     margin: .2rem;
 }
 
+.experience-container :nth-child(1) img{
+    width: 4rem;
+}
+
+
 .experience-container :nth-child(4) img{
     width: .7rem;
 }
@@ -347,8 +348,8 @@ nav a{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .col-sm-33 {
-        width: calc(100% / 3);
+    .col-sm-50 {
+        width: calc(100% / 2);
     }
 
     .home {

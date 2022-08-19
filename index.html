@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Ramirez Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
@@ -28,7 +31,7 @@
                 <li>
                     <a href="#experience" onclick="toggleMenu()">Experiencia</a>
                 </li>
-                <li>                  
+                <li>
                     <a href="#abilities" onclick="toggleMenu()">Mis habilidades</a>
                 </li>
                 <li>
@@ -41,24 +44,27 @@
         </nav>
     </div>
 
-        <div id="home" class="home">
-            <div class="home-bg">
-                <h1 class="title-color bold marginless">Eric Ramirez</h1>
-                <h3 class="title-color">Desarrollador web full stack</h3>
-                <h3 class="title-color"><span>+6 meses</span> de experiencia</h3>
-    
-                <img src="./images/cib_linkedin-in.svg" alt="LinkedIn Logo">
-                <img src="./images/ant-design_instagram-filled.svg" alt="Instagram Logo">
-                <img src="./images/ant-design_twitter-outlined.svg" alt="Twitter Logo">            
+    <div id="home" class="home">
+        <div class="home-bg">
+            <h1 class="title-color bold marginless">Eric Ramirez</h1>
+            <h3 class="title-color">Desarrollador web frontend</h3>
+            <h3 class="title-color"><span>+3 meses</span> de experiencia</h3>
+            <div>
+                <a class="cv-button" href="./docs/Eric Ramirez CV.pdf" download="CV Eric Ramirez"><span><i class="fa-solid fa-download"></i> Curriculum</span></a>
             </div>
+            <a href="https://www.linkedin.com/in/eric-ramirez-a44975241/"><img style="margin-top: 2rem;" src="./images/cib_linkedin-in.svg" alt="LinkedIn Logo"></a>
         </div>
+    </div>
 
 
     <div id="about-me" class="center-parent light-bg">
         <div class="am center-text">
             <h2 class="title-color bold">Acerca de mí</h2>
             <div class="am-container">
-                <h3 class="center-text marginless">Llevo 3 años formándome en el ámbito de desarrollo de software, durante el proceso he adquirido conocimiento acerca de Redes, Electrónica, Arquitectura de computadoras, Comercio electrónico y marketing digital, Arquitectura de SO y Estructuras de datos y algoritmia.</h3>
+                <h3 class="center-text marginless">Llevo 3 años formándome en el ámbito de desarrollo de software,
+                    durante el proceso he adquirido conocimiento acerca de Redes, Electrónica, Arquitectura de
+                    computadoras, Comercio electrónico y marketing digital, Arquitectura de SO y Estructuras de datos y
+                    algoritmia.</h3>
                 <div class="row">
                     <div class="col-xs-100 col-sm-50">
                         <img src="./images/Ceti.webp" alt="">
@@ -72,12 +78,12 @@
                         <p class="marginless">Ing. Desarrollo de Software</p>
                         <p class="marginless">2019-2022</p>
                     </div>
-                    <!-- <div class="col-xs-100 col-sm-33">
+                    <div class="col-xs-100 col-sm-33">
                         <img src="./images/logo_academlo 5.svg" alt="">
                         <h3 class="title-color marginless">Academlo</h3>
                         <p class="marginless">Web full-stack</p>
                         <p class="marginless">2022-Actualidad</p>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,7 +104,7 @@
                     </div>
                 </div>
                 <div class="experience-item">
-                    <h3 class="title-color">2 meses</h3>
+                    <h3 class="title-color">3 meses</h3>
                 </div>
                 <div class="experience-item">
                     <img src="./images/Group 35.svg" alt="">
@@ -112,34 +118,28 @@
             <h2 class="title-color center-text">Mis habilidades</h2>
             <div class="ma-grid">
                 <div class="ma-percentage marginless">
-                    <h2><span>40%</span></h2>
+                    <h2><span><i class="fa-brands fa-js"></i></span></h2>
                 </div>
                 <div class="ma-ability">
-                    <h3 class="title-color marginless">Javascript</h3>
+                    <h3 class="title-color marginless">JavaScript</h3>
                 </div>
                 <div class="ma-percentage">
-                    <h2><span>60%</span></h2>
+                    <h2><span><i class="fa-brands fa-css3-alt"></i></span></h2>
                 </div>
                 <div class="ma-ability">
                     <h3 class="title-color marginless">CSS</h3>
                 </div>
                 <div class="ma-percentage">
-                    <h2><span>80%</span></h2>
+                    <h2><span><i class="fa-brands fa-html5"></i></span></h2>
                 </div>
                 <div class="ma-ability">
                     <h3 class="title-color marginless">HTML</h3>
                 </div>
                 <div class="ma-percentage">
-                    <h2><span>60%</span></h2>
+                    <h2><span><i class="fa-brands fa-react"></i></span></h2>
                 </div>
                 <div class="ma-ability">
-                    <h3 class="title-color marginless">C / C++</h3>
-                </div>
-                <div class="ma-percentage">
-                    <h2><span>50%</span></h2>
-                </div>
-                <div class="ma-ability">
-                    <h3 class="title-color marginless">Java</h3>
+                    <h3 class="title-color marginless">React</h3>
                 </div>
             </div>
         </div>
@@ -150,28 +150,53 @@
             <h2 class="center-text title-color">Mi portafolio</h2>
             <div class="portfolio-container">
                 <div class="portfolio-l">
-                    <div>
+                    <a href="https://gorgeous-parfait-fc32b1.netlify.app/">
                         <div class="image-shadow-accent">
                             <img src="./images/shopping cart.png" alt="">
                         </div>
-                        <a href="https://gorgeous-parfait-fc32b1.netlify.app/"><h3 class="title-color">Shopping cart</h3></a>
-                    </div>
+                        <h3 class="title-color">Shopping cart</h3>
+                    </a>
                 </div>
                 <div class="portfolio-r">
-                    <div>
-                        <div class="image-shadow-light">
-                            <img src="./images/image 10.jpg" alt="">
+                    <a href="https://gregarious-crepe-dd9a0e.netlify.app/">
+                        <div class="image-shadow-accent">
+                            <img src="./images/quotes.png" alt="">
                         </div>
-                        <h3 class="title-color">Training at home app</h3>
-                    </div>
+                        <h3 class="title-color">Quotes</h3>
+                    </a>
                 </div>
                 <div class="portfolio-l">
-                    <div>
+                    <a href="https://lucky-bunny-e55eff.netlify.app/">
                         <div class="image-shadow-accent">
-                            <img src="./images/image 11.jpg" alt="">
+                            <img src="./images/weather.png" alt="">
                         </div>
-                        <h3 class="title-color">Personal Writer</h3>
-                    </div>
+                        <h3 class="title-color">Weather app</h3>
+                    </a>
+                </div>
+                <div class="portfolio-r">
+                    <a href="https://cerulean-syrniki-b5087e.netlify.app">
+                        <div class="image-shadow-accent">
+                            <img src="./images/rickandmorty.PNG" alt="">
+                        </div>
+                        <h3 class="title-color">Rick and Morty location wiki</h3>
+                    </a>
+                </div>
+                <div class="portfolio-l">
+                    <a href="https://superb-pixie-4eae58.netlify.app/">
+                        <div class="image-shadow-accent">
+                            <img src="./images/pokedex.PNG" alt="">
+                        </div>
+                        <h3 class="title-color">Pokedex</h3>
+                    </a>
+                </div>
+
+                <div class="portfolio-r">
+                    <a href="https://snazzy-sunflower-04f1e6.netlify.app/">
+                        <div class="image-shadow-accent">
+                            <img src="./images/ecommerce.PNG" alt="">
+                        </div>
+                        <h3 class="title-color">E-commerce</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -181,15 +206,10 @@
         <div class="contact-container">
             <h2 class="title-color center-text">Contacto</h2>
             <div class="contact-item">
-                <div class="contact-info">
-                    <img src="./images/phone 3.svg" alt="">
-                    <p class="title-color">Número celular</p>
-                    <p>1234567890</p>
-                </div>
-                <div class="contact-info">
-                    <img src="./images/mail 3.svg" alt="">
-                    <p class="title-color">Email</p>
-                    <p>example@correo.com</p>
+                <a href="https://www.linkedin.com/in/eric-ramirez-a44975241/"><h2><span><i class="fa-brands fa-linkedin"></i></span></h2></a>
+                <div class="center-text">
+                    <h3><span><i class="fa-solid fa-envelope"></i></span></h3>
+                    <p class="title-color">ericmacias1011@gmail.com</p>
                 </div>
             </div>
         </div>

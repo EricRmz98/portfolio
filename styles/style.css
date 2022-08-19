@@ -38,6 +38,11 @@ span {
     color: #f1a600;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* AUXILIARS */
 
 .bold{
@@ -160,6 +165,13 @@ nav a{
     margin-right: .5rem;
 }
 
+.cv-button{
+    background: none;
+    border: 2px solid #f1a600;
+    border-radius: 1rem;
+    padding: .5rem 1rem;  
+}
+
 .am {
     padding: 0 1rem 2.5rem 1rem;
     width: 100%;
@@ -255,7 +267,9 @@ nav a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 4.375rem;
+    width: 10rem;
 }
 
 .ma-ability {
